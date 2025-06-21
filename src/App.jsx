@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Whatsapp from "/img/whatsapp.png";
+import Backblind from "/img/backblind.png";
 import {
   Shield,
   Camera,
@@ -7,7 +8,6 @@ import {
   Phone,
   Mail,
   CheckCircle,
-  Eye,
   Wifi,
   Lock,
   AlertTriangle,
@@ -113,7 +113,11 @@ const BlindspotLanding = () => {
           >
             <div className="flex items-center justify-center mb-8">
               <div className="relative">
-                <Eye className="w-16 h-16 text-blue-400 animate-pulse" />
+                <img
+                  src={Backblind}
+                  alt="backblind"
+                  className="rounded-full h-[80px] w-[80px]"
+                />
                 <div className="absolute -top-2 -right-2 w-6 h-6 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-ping"></div>
               </div>
             </div>
@@ -346,7 +350,6 @@ const BlindspotLanding = () => {
       <footer className="bg-slate-900 py-8 border-t border-slate-700">
         <div className="container mx-auto px-6 text-center">
           <div className="flex items-center justify-center mb-4">
-            <Eye className="w-8 h-8 text-blue-400 mr-2" />
             <span className="text-2xl font-bold text-white">
               Blindspot System Solution
             </span>
